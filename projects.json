@@ -31,5 +31,16 @@
     "date": "2026-10-29",
     "score": 7.8,
     "learned": "Web Audio API level metering, getUserMedia error handling, separating pure logic for Node tests, timer throttling in background tabs"
+  },
+  {
+    "name": "bankcsv",
+    "problem": "Bank CSV exports differ per bank (columns, dates, number formats, preamble lines), making multi-bank budgeting a manual clean-up.",
+    "solution": "CLI that detects the layout, normalises to one CSV, applies keyword category rules and prints a monthly summary.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/bankcsv",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-10-29",
+    "score": 7.5,
+    "learned": "Decimal money parsing across locales, header detection heuristics, inferring day-first vs month-first dates from a whole column"
   }
 ]
