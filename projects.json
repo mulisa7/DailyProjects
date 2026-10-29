@@ -9,5 +9,16 @@
     "date": "2026-10-29",
     "score": 7.4,
     "learned": "argparse exit-code design, regex-based source scanning, unittest with redirected stdio"
+  },
+  {
+    "name": "csv2xlsx",
+    "problem": "Excel guesses encoding and delimiter when opening CSVs, producing garbled accents, single-column data and mangled ids.",
+    "solution": "CLI that detects encoding and delimiter and writes a real .xlsx using only the standard library.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/csv2xlsx",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-10-29",
+    "score": 7.6,
+    "learned": "OOXML package layout, encoding fallback chain, delimiter detection by row consistency"
   }
 ]
