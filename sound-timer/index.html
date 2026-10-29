@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sound Timer</title>
+  <meta name="description" content="A practice timer that only counts the time you are actually making sound.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Sound Timer</h1>
+      <p class="sub">Counts only the minutes you actually play. Silence and rests between pieces don't count.</p>
+    </header>
+
+    <section class="clock" aria-live="off">
+      <div class="label">Time with sound</div>
+      <div id="soundTime" class="big">0:00</div>
+      <div class="bar" role="progressbar" aria-label="Progress to goal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="goalBar">
+        <div id="goalFill"></div>
+      </div>
+      <div class="row">
+        <span id="goalText">Goal 20:00</span>
+        <span id="sessionText">Session 0:00</span>
+        <span id="pctText">0% playing</span>
+      </div>
+    </section>
+
+    <section class="meter-wrap">
+      <div class="meter" id="meter" aria-hidden="true">
+        <div id="meterFill"></div>
+        <div id="meterMark"></div>
+      </div>
+      <div id="status" class="status" role="status">Ready. Press Start and allow the microphone.</div>
+    </section>
+
+    <section class="controls">
+      <button id="startBtn" class="primary">Start</button>
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="finishBtn" disabled>Finish</button>
+    </section>
+
+    <section class="settings">
+      <label>Goal
+        <select id="goalSel">
+          <option value="5">5 min</option>
+          <option value="10">10 min</option>
+          <option value="15">15 min</option>
+          <option value="20" selected>20 min</option>
+          <option value="30">30 min</option>
+          <option value="45">45 min</option>
+          <option value="60">60 min</option>
+        </select>
+      </label>
+      <label>Sensitivity
+        <input id="sens" type="range" min="1" max="10" value="5">
+      </label>
+      <button id="recalBtn" disabled>Recalibrate</button>
+    </section>
+
+    <section class="history">
+      <div class="history-head">
+        <h2>Recent sessions</h2>
+        <button id="clearBtn" class="link">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+      <p id="historyEmpty" class="muted">No sessions yet.</p>
+    </section>
+
+    <footer>
+      <p class="muted">Audio never leaves your device and is never recorded. Only the loudness level is read.</p>
+    </footer>
+  </main>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

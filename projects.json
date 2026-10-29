@@ -20,5 +20,16 @@
     "date": "2026-10-29",
     "score": 7.6,
     "learned": "OOXML package layout, encoding fallback chain, delimiter detection by row consistency"
+  },
+  {
+    "name": "sound-timer",
+    "problem": "Practice timers count the whole session, so time spent not playing is counted as practice.",
+    "solution": "Browser app that listens through the microphone and only runs the clock while it hears sound, bridging short rests.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/sound-timer",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-10-29",
+    "score": 7.8,
+    "learned": "Web Audio API level metering, getUserMedia error handling, separating pure logic for Node tests, timer throttling in background tabs"
   }
 ]
