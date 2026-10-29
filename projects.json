@@ -1,0 +1,13 @@
+[
+  {
+    "name": "envcheck",
+    "problem": "Apps crash because a local .env is missing variables that were added to .env.example, or code reads variables nobody documented.",
+    "solution": "CLI that diffs .env against .env.example and scans source for env reads to flag undocumented variables.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/envcheck",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-10-29",
+    "score": 7.4,
+    "learned": "argparse exit-code design, regex-based source scanning, unittest with redirected stdio"
+  }
+]
