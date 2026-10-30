@@ -42,5 +42,16 @@
     "date": "2026-10-29",
     "score": 7.5,
     "learned": "Decimal money parsing across locales, header detection heuristics, inferring day-first vs month-first dates from a whole column"
+  },
+  {
+    "name": "logfold",
+    "problem": "Log lines that differ only by timestamp, id, IP or counter never match, so spotting what a log keeps repeating needs hand-written sed before sort | uniq -c.",
+    "solution": "Go CLI that normalises variable parts into placeholders, groups matching lines anywhere in the input and prints counted patterns.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/logfold",
+    "language": "Go",
+    "status": "completed",
+    "date": "2026-10-30",
+    "score": 7.2,
+    "learned": "RE2 has no lookahead so rule order and word boundaries matter; testing a CLI by making main a run(args, stdin, stdout, stderr) function"
   }
 ]
