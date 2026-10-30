@@ -53,5 +53,16 @@
     "date": "2026-10-30",
     "score": 7.2,
     "learned": "RE2 has no lookahead so rule order and word boundaries matter; testing a CLI by making main a run(args, stdin, stdout, stderr) function"
+  },
+  {
+    "name": "tzquick",
+    "problem": "Converting a time between zones means a converter site with dropdowns or error-prone mental offset maths; people asked for a tool that takes a phrase like 'today 17:00 Pacific in UTC'.",
+    "solution": "Static browser page that parses a plain phrase and converts it with built-in Intl time zone data, flagging DST gaps, repeated hours and ambiguous abbreviations.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/tzquick",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-10-30",
+    "score": 7.4,
+    "learned": "Turning wall-clock time into an instant with Intl needs an offset round-trip check to detect DST gaps and repeats; keeping parsing in a DOM-free module made it testable under node:test"
   }
 ]

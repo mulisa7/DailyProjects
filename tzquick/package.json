@@ -1,0 +1,11 @@
+{
+  "name": "tzquick",
+  "version": "0.1.0",
+  "description": "Convert times between zones by typing a plain phrase",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "serve": "node serve.js"
+  },
+  "license": "MIT"
+}

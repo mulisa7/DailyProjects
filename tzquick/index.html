@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tzquick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>tzquick</h1>
+  <p class="lead">Type a time and where it is. Everything runs in your browser.</p>
+
+  <form id="form" autocomplete="off">
+    <label for="q">Phrase</label>
+    <input id="q" name="q" type="text" spellcheck="false" placeholder="tomorrow 5pm London in New York, Tokyo" autofocus>
+  </form>
+
+  <div id="error" class="error" role="alert" hidden></div>
+
+  <section id="out" hidden aria-live="polite">
+    <p id="source" class="source"></p>
+    <ul id="results" class="results"></ul>
+    <ul id="notes" class="notes"></ul>
+    <button id="copy" type="button">Copy as text</button>
+  </section>
+
+  <section id="empty" class="empty">
+    <p>Try one of these:</p>
+    <ul id="examples" class="examples">
+      <li><button type="button">9am New York in London, Tokyo</button></li>
+      <li><button type="button">friday 17:30 Johannesburg in PT, ET, UTC</button></li>
+      <li><button type="button">2026-11-01 01:30 New York in UTC</button></li>
+      <li><button type="button">now in Sydney, Kolkata</button></li>
+    </ul>
+    <p class="hint">Format: <code>[date] time [from zone] in zone, zone</code>. Zones can be cities, abbreviations (PT, SAST), <code>UTC+5:30</code> or names like <code>Europe/London</code>. Leave the source out to use your own time zone.</p>
+  </section>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

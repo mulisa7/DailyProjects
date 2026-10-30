@@ -1,0 +1,41 @@
+:root {
+  --bg: #fafaf8;
+  --fg: #1d1d1b;
+  --muted: #6b6b66;
+  --line: #deded8;
+  --accent: #1a5fb4;
+  --err: #a4262c;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161615; --fg: #ececE8; --muted: #9a9a93; --line: #34342f; --accent: #7ab0ff; --err: #ff8b8b; --card: #1e1e1c; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 640px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { margin: 0 0 4px; font-size: 1.6rem; }
+.lead { margin: 0 0 24px; color: var(--muted); }
+label { display: block; font-size: .85rem; color: var(--muted); margin-bottom: 4px; }
+input[type=text] { width: 100%; padding: 12px; font: inherit; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 6px; }
+input[type=text]:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.error { margin-top: 12px; padding: 10px 12px; border-left: 3px solid var(--err); color: var(--err); background: var(--card); }
+.source { margin: 20px 0 8px; color: var(--muted); }
+ul { list-style: none; padding: 0; margin: 0; }
+.results li { display: grid; grid-template-columns: 1fr auto; gap: 0 12px; padding: 12px; background: var(--card); border: 1px solid var(--line); border-radius: 6px; margin-bottom: 8px; }
+.results .name { font-weight: 600; }
+.results .time { font-size: 1.5rem; font-variant-numeric: tabular-nums; grid-row: span 2; align-self: center; }
+.results .meta { color: var(--muted); font-size: .85rem; }
+.notes li { margin: 6px 0; padding-left: 10px; border-left: 3px solid var(--line); color: var(--muted); font-size: .9rem; }
+button { font: inherit; color: var(--accent); background: none; border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+button:hover { border-color: var(--accent); }
+#copy { margin-top: 12px; }
+.empty { margin-top: 24px; }
+.examples li { margin: 6px 0; }
+.examples button { text-align: left; }
+.hint { color: var(--muted); font-size: .9rem; }
+code { background: var(--card); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; font-size: .9em; }
+[hidden] { display: none !important; }
+@media (max-width: 420px) {
+  main { padding-top: 20px; }
+  .results .time { font-size: 1.3rem; }
+}

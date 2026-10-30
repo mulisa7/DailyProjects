@@ -9,3 +9,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 003 | [sound-timer](sound-timer) | Practice timer that only counts the time you are actually making sound | JavaScript |
 | 004 | [bankcsv](bankcsv) | Normalises bank CSV exports, tags spending by your rules, monthly summary | Python |
 | 005 | [logfold](logfold) | Folds log lines that differ only by timestamps, ids and numbers into counted patterns | Go |
+| 006 | [tzquick](tzquick) | Converts a typed phrase like "friday 5pm London in PT, Tokyo" between time zones, DST aware | JavaScript |
