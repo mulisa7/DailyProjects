@@ -1,0 +1,7 @@
+[package]
+name = "dirdiff"
+version = "0.1.0"
+edition = "2021"
+description = "Compare two folders by file content and report moved, changed and missing files"
+
+[dependencies]

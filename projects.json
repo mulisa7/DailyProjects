@@ -64,5 +64,16 @@
     "date": "2026-10-30",
     "score": 7.4,
     "learned": "Turning wall-clock time into an instant with Intl needs an offset round-trip check to detect DST gaps and repeats; keeping parsing in a DOM-free module made it testable under node:test"
+  },
+  {
+    "name": "dirdiff",
+    "problem": "After a backup, restore or reorganisation there is no quick way to tell whether two folders really match; name and timestamp comparison misses corruption and reports renames as a delete plus a new file.",
+    "solution": "Rust CLI that compares two folders by SHA-256 content and classifies files as identical, changed, moved or renamed, or only on one side, with exit codes for scripting.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/dirdiff",
+    "language": "Rust",
+    "status": "completed",
+    "date": "2026-10-31",
+    "score": 7.3,
+    "learned": "Implementing SHA-256 including padding edge cases, avoiding needless hashing by comparing sizes first, and testing a Rust binary through CARGO_BIN_EXE"
   }
 ]
