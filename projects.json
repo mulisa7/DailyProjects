@@ -75,5 +75,16 @@
     "date": "2026-10-31",
     "score": 7.3,
     "learned": "Implementing SHA-256 including padding edge cases, avoiding needless hashing by comparing sizes first, and testing a Rust binary through CARGO_BIN_EXE"
+  },
+  {
+    "name": "drivecat",
+    "problem": "Old external disks and DVDs sit in a drawer and nobody remembers which one holds a file; people asked for a tool that indexes them so they can be searched while unplugged.",
+    "solution": "Python CLI that catalogs file names, sizes and dates into SQLite, then searches, browses, sizes and finds same-name duplicates across disks offline.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/drivecat",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-10-31",
+    "score": 7.3,
+    "learned": "A leaked SQLite connection on a corrupt file locks it on Windows, so close on every failure path; storing relative posix paths keeps catalogs portable between operating systems"
   }
 ]
