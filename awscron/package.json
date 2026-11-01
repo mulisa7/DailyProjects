@@ -1,0 +1,8 @@
+{
+  "name": "awscron",
+  "version": "0.1.0",
+  "description": "Validate AWS EventBridge / CloudWatch cron and rate expressions and list their next run times",
+  "bin": { "awscron": "bin/awscron.js" },
+  "scripts": { "test": "node --test \"test/*.test.js\"" },
+  "license": "MIT"
+}

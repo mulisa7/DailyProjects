@@ -97,5 +97,16 @@
     "date": "2026-11-01",
     "score": 7.3,
     "learned": "Linear two-point time mapping for drift, tolerant SRT parsing (BOM, CRLF, missing indexes), node:test for a zero-dependency CLI"
+  },
+  {
+    "name": "awscron",
+    "problem": "AWS EventBridge cron differs from Unix cron (six fields, year, Sunday=1, one of day-of-month/day-of-week must be ?), and rules are only rejected with a generic error at deploy time.",
+    "solution": "Node CLI that validates cron() and rate() expressions with specific error messages and prints the next run times in UTC.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/awscron",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-11-01",
+    "score": 7.3,
+    "learned": "AWS cron edge rules (L, W, nL, n#m), computing nearest-weekday without leaving the month, and that node --test needs a glob on Windows"
   }
 ]
