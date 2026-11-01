@@ -86,5 +86,16 @@
     "date": "2026-10-31",
     "score": 7.3,
     "learned": "A leaked SQLite connection on a corrupt file locks it on Windows, so close on every failure path; storing relative posix paths keeps catalogs portable between operating systems"
+  },
+  {
+    "name": "srtfix",
+    "problem": "Downloaded SRT subtitles start early or late or drift because of a frame-rate mismatch, and player delay settings are not saved into the file.",
+    "solution": "Node CLI that shifts, stretches or two-point syncs SRT timings, validates cues and renumbers the file.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/srtfix",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-11-01",
+    "score": 7.3,
+    "learned": "Linear two-point time mapping for drift, tolerant SRT parsing (BOM, CRLF, missing indexes), node:test for a zero-dependency CLI"
   }
 ]

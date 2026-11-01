@@ -12,3 +12,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 006 | [tzquick](tzquick) | Converts a typed phrase like "friday 5pm London in PT, Tokyo" between time zones, DST aware | JavaScript |
 | 007 | [dirdiff](dirdiff) | Compares two folders by content and reports changed, moved and missing files | Rust |
 | 008 | [drivecat](drivecat) | Catalogs unplugged drives so you can search and browse them without plugging them in | Python |
+| 009 | [srtfix](srtfix) | Shifts, stretches or two-point syncs SRT subtitle timings and checks for overlaps | JavaScript |

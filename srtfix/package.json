@@ -1,0 +1,8 @@
+{
+  "name": "srtfix",
+  "version": "0.1.0",
+  "description": "Fix out-of-sync SRT subtitle files",
+  "bin": { "srtfix": "cli.js" },
+  "scripts": { "test": "node --test test.js" },
+  "license": "MIT"
+}
