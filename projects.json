@@ -108,5 +108,16 @@
     "date": "2026-11-01",
     "score": 7.3,
     "learned": "AWS cron edge rules (L, W, nL, n#m), computing nearest-weekday without leaving the month, and that node --test needs a glob on Windows"
+  },
+  {
+    "name": "cidrplan",
+    "problem": "Network allocations kept in wikis and spreadsheets overlap by accident, and working out what is still free means manual binary arithmetic.",
+    "solution": "Go CLI that reads a text list of IPv4 CIDRs, reports overlaps and duplicates, lists free space inside a parent range and finds the next aligned free block.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/cidrplan",
+    "language": "Go",
+    "status": "completed",
+    "date": "2026-11-02",
+    "score": 7.3,
+    "learned": "Splitting an address range into minimal aligned CIDRs, merging overlapping intervals, uint32 edge cases at the top of the IPv4 space, net/netip strict prefix parsing"
   }
 ]
