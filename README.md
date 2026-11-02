@@ -15,3 +15,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 009 | [srtfix](srtfix) | Shifts, stretches or two-point syncs SRT subtitle timings and checks for overlaps | JavaScript |
 | 010 | [awscron](awscron) | Validates AWS EventBridge cron and rate expressions and lists the next run times | JavaScript |
 | 011 | [cidrplan](cidrplan) | Checks a list of IPv4 CIDR allocations for overlaps and finds free space and the next free block | Go |
+| 012 | [rangespec](rangespec) | Turns phrases like "last quarter" or "4 weeks ago to 2 weeks from now" into exact start and end dates | Python |

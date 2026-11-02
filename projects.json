@@ -119,5 +119,16 @@
     "date": "2026-11-02",
     "score": 7.3,
     "learned": "Splitting an address range into minimal aligned CIDRs, merging overlapping intervals, uint32 edge cases at the top of the IPv4 space, net/netip strict prefix parsing"
+  },
+  {
+    "name": "rangespec",
+    "problem": "Reports and queries need exact date ranges, and working out phrases like 'last full quarter' or '4 weeks ago to 2 weeks from now' by hand leads to off-by-one errors; people asked for a parser for simple, relative and to-style ranges.",
+    "solution": "Python CLI and importable parser that resolves plain-English date ranges against a fixed today and prints inclusive start and end dates as text, ISO, JSON, a SQL condition or a day list.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/rangespec",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-02",
+    "score": 7.2,
+    "learned": "Calendar arithmetic with month-end clamping, why a to-style splitter must handle phrases like 'year to date' before splitting, and making the resolver a pure function of an explicit today so tests are deterministic"
   }
 ]
