@@ -37,7 +37,7 @@ permcheck [--fix] [--depth N] [--json] [PATH ...]
 ```
 $ permcheck ~
 0644 /home/me/projects/app/.env -> 0600  env file (world-accessible)
-0664 /home/me/.aws/credentials -> 0664  cloud credentials (group-accessible)
+0664 /home/me/.aws/credentials -> 0600  cloud credentials (group-accessible)
 2 problem(s) in 9 files checked; run with --fix to chmod
 ```
 
