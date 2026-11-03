@@ -17,3 +17,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 011 | [cidrplan](cidrplan) | Checks a list of IPv4 CIDR allocations for overlaps and finds free space and the next free block | Go |
 | 012 | [rangespec](rangespec) | Turns phrases like "last quarter" or "4 weeks ago to 2 weeks from now" into exact start and end dates | Python |
 | 013 | [permcheck](permcheck) | Finds ssh keys, .env files and cloud credentials that other users can read, and can tighten them | Rust |
+| 014 | [portname](portname) | Finds file names that break on Windows, macOS or OneDrive: reserved names, bad characters, case clashes, long paths | TypeScript |

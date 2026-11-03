@@ -141,5 +141,16 @@
     "date": "2026-11-03",
     "score": 7.1,
     "learned": "Unix mode-bit arithmetic, testing real chmod behaviour in temp folders (default umask makes directories 0755), and why --fix should only ever remove bits"
+  },
+  {
+    "name": "portname",
+    "problem": "Files copied to Windows, macOS or OneDrive fail on names that were fine elsewhere: reserved names like CON, illegal characters, trailing dots, case-only duplicates and paths over 260 characters. Sync clients report one file at a time.",
+    "solution": "TypeScript CLI for Deno that lists every problem name in a folder or a stdin path list for chosen targets, explains why and suggests a safe replacement, without touching any file.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/portname",
+    "language": "TypeScript",
+    "status": "completed",
+    "date": "2026-11-03",
+    "score": 7.3,
+    "learned": "Windows matches device names on the part before the first dot, name length is UTF-16 units on Windows but UTF-8 bytes on macOS, and String.normalize makes macOS normalization collisions testable; reporting each bad parent folder once keeps output readable"
   }
 ]
