@@ -1,0 +1,7 @@
+[package]
+name = "permcheck"
+version = "0.1.0"
+edition = "2021"
+description = "Find secret files (ssh keys, .env, cloud credentials) that other users on the machine can read"
+
+[dependencies]
