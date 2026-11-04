@@ -163,5 +163,16 @@
     "date": "2026-11-04",
     "score": 6.9,
     "learned": "Aggregating heterogeneous records into per-path statistics; auto-detecting JSON vs NDJSON; testing a CLI via an injectable main"
+  },
+  {
+    "name": "hexfind",
+    "problem": "Hex editors and grep can find a magic number but not a header followed by a field with a sensible value, so most chance hits of the magic bytes have to be checked by hand; Hacker News users asked for fuzzy search over header fields.",
+    "solution": "Python CLI that matches patterns of literal bytes, wildcards and typed integer fields with constraints, and prints each match offset with the decoded field values.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/hexfind",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-04",
+    "score": 7.3,
+    "learned": "Using mmap for scanning with bytes.find to jump to the first literal, struct format codes for endianness and sign, and keeping a pattern parser strict so typos fail with a clear message"
   }
 ]

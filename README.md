@@ -19,3 +19,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 013 | [permcheck](permcheck) | Finds ssh keys, .env files and cloud credentials that other users can read, and can tighten them | Rust |
 | 014 | [portname](portname) | Finds file names that break on Windows, macOS or OneDrive: reserved names, bad characters, case clashes, long paths | TypeScript |
 | 015 | [jsonshape](jsonshape) | Summarises the structure of a JSON or NDJSON file: types, optional keys, ranges, examples | Python |
+| 016 | [hexfind](hexfind) | Searches binary files for a structure: literal bytes plus integer fields with value constraints | Python |
