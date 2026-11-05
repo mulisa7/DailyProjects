@@ -185,5 +185,16 @@
     "date": "2026-11-05",
     "score": 7.1,
     "learned": "Splitting identifiers around the last digit run to define a series, reporting gaps as ranges so huge gaps stay cheap, and that CSV line numbers should include the header row to match spreadsheet rows"
+  },
+  {
+    "name": "headlinecheck",
+    "problem": "People want a clickbait headline filter, but existing ones target video thumbnails or give a verdict with no reason.",
+    "solution": "Rule-based scorer with readable reasons, shipped as a Manifest V3 extension that dims or labels headlines and as a CLI.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/headlinecheck",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-11-05",
+    "score": 6.9,
+    "learned": "Manifest V3 content scripts and storage, sharing one UMD module between extension, CLI and tests, MutationObserver debouncing, tuning heuristic offsets"
   }
 ]

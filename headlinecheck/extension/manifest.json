@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "headlinecheck",
+  "version": "0.1.0",
+  "description": "Dims or labels headlines that look like clickbait, using a rule-based score you can read.",
+  "permissions": ["storage"],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scoring.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

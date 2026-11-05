@@ -1,0 +1,10 @@
+{
+  "name": "headlinecheck",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rule-based clickbait headline scorer with a browser extension and CLI",
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "license": "MIT"
+}

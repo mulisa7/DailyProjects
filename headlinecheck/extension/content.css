@@ -1,0 +1,20 @@
+[data-headlinecheck-mode="dim"] {
+  opacity: 0.35 !important;
+  transition: opacity 0.15s;
+}
+
+[data-headlinecheck-mode="dim"]:hover {
+  opacity: 1 !important;
+}
+
+[data-headlinecheck-mode="badge"]::after {
+  content: "clickbait " attr(data-headlinecheck-score);
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0 0.4em;
+  font: 600 11px/1.6 system-ui, sans-serif;
+  color: #7a2e00;
+  background: #ffe2c2;
+  border-radius: 3px;
+  vertical-align: middle;
+}

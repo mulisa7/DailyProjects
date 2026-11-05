@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>headlinecheck demo</title>
+<link rel="stylesheet" href="../extension/content.css">
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 40rem; margin: 1.5rem auto; padding: 0 1rem; }
+  h2 { font-size: 1.1rem; margin: .9rem 0; }
+  form { display: flex; gap: .5rem; margin: 1rem 0; }
+  input { flex: 1; font: inherit; padding: .35rem; min-width: 0; }
+  button { font: inherit; }
+  .note { color: #555; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>headlinecheck demo</h1>
+<p class="note">This page loads the same scoring and content scripts the extension injects. Hover a dimmed headline to read it; the tooltip lists why it scored.</p>
+<form id="add"><input id="text" aria-label="Headline to add" placeholder="Type a headline and press Add"><button>Add</button></form>
+<div id="list">
+  <h2>Central bank holds rates at 4.25% as inflation eases to 3.1%</h2>
+  <h2>You won't believe what happened next</h2>
+  <h2>Is this the end of the office?</h2>
+  <h2>10 things only people from Durban will understand</h2>
+  <h2>Council approves R40 million water plant upgrade</h2>
+  <h2>SHOCKING: Minister DESTROYS critic in epic reply!!</h2>
+  <h2>Local team beats rivals 2-1 in cup semi-final</h2>
+</div>
+<script src="../extension/scoring.js"></script>
+<script>
+  window.HEADLINECHECK_SETTINGS = { threshold: 3, mode: new URLSearchParams(location.search).get('mode') || 'dim' };
+  document.getElementById('add').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var box = document.getElementById('text');
+    if (!box.value.trim()) return;
+    var h = document.createElement('h2');
+    h.textContent = box.value;
+    document.getElementById('list').appendChild(h);
+    box.value = '';
+  });
+</script>
+<script src="../extension/content.js"></script>
+</body>
+</html>
