@@ -174,5 +174,16 @@
     "date": "2026-11-04",
     "score": 7.3,
     "learned": "Using mmap for scanning with bytes.find to jump to the first literal, struct format codes for endianness and sign, and keeping a pattern parser strict so typos fail with a clear message"
+  },
+  {
+    "name": "seqgap",
+    "problem": "Accountants and auditors need to know whether invoice, credit note or cheque numbers have holes or duplicates, and checking by hand across several mixed series is slow and error-prone.",
+    "solution": "Go CLI that groups identifiers into series by prefix and suffix and reports missing ranges, duplicates, out-of-order entries and inconsistent padding from a list or a CSV column.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/seqgap",
+    "language": "Go",
+    "status": "completed",
+    "date": "2026-11-05",
+    "score": 7.1,
+    "learned": "Splitting identifiers around the last digit run to define a series, reporting gaps as ranges so huge gaps stay cheap, and that CSV line numbers should include the header row to match spreadsheet rows"
   }
 ]
