@@ -22,3 +22,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 016 | [hexfind](hexfind) | Searches binary files for a structure: literal bytes plus integer fields with value constraints | Python |
 | 017 | [seqgap](seqgap) | Finds missing, duplicate and out-of-order numbers in invoice or cheque series | Go |
 | 018 | [headlinecheck](headlinecheck) | Rule-based clickbait headline scorer: browser extension that dims flagged headlines, plus a CLI | JavaScript |
+| 019 | [branchsweep](branchsweep) | Finds local git branches that are merged, squash-merged, orphaned or stale and deletes them only on request | Python |

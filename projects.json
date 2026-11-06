@@ -196,5 +196,16 @@
     "date": "2026-11-05",
     "score": 6.9,
     "learned": "Manifest V3 content scripts and storage, sharing one UMD module between extension, CLI and tests, MutationObserver debouncing, tuning heuristic offsets"
+  },
+  {
+    "name": "branchsweep",
+    "problem": "git branch --merged misses branches merged by squash or rebase, so local branches pile up and cleanup relies on risky one-liners.",
+    "solution": "CLI that classifies local branches (merged, squash-merged via git cherry, upstream gone, stale) and deletes only with explicit flags.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/branchsweep",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-06",
+    "score": 7.0,
+    "learned": "Patch-id based merge detection with git cherry, for-each-ref formats, building throwaway git repos for tests"
   }
 ]
