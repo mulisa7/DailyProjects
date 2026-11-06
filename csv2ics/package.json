@@ -1,0 +1,12 @@
+{
+  "name": "csv2ics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Convert a CSV list of events or a class timetable into an .ics calendar file",
+  "bin": { "csv2ics": "src/cli.js" },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>csv2ics</title>
+<style>
+  :root { --bg: #fafaf8; --fg: #1d1d1b; --muted: #6b6b66; --line: #d8d8d2; --accent: #1f5fbf; --bad: #b3261e; --ok: #2e7d32; --panel: #fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171716; --fg: #ececea; --muted: #a0a09a; --line: #3a3a37; --accent: #7fb0ff; --bad: #ff8a80; --ok: #81c784; --panel: #20201f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.4rem; margin: 0 0 4px; }
+  p.lead { margin: 0 0 20px; color: var(--muted); }
+  label { display: block; font-weight: 600; margin-bottom: 4px; }
+  textarea { width: 100%; min-height: 200px; font: 13px/1.4 ui-monospace, Consolas, monospace; padding: 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--fg); resize: vertical; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 14px 0; }
+  input, select { width: 100%; padding: 7px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--fg); font: inherit; }
+  .check { display: flex; align-items: center; gap: 8px; font-weight: 400; margin-top: 26px; }
+  .check input { width: auto; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+  button { padding: 8px 14px; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--bg); font: inherit; font-weight: 600; cursor: pointer; }
+  button.secondary { background: transparent; color: var(--accent); }
+  button:disabled { opacity: .45; cursor: default; }
+  #status { margin: 8px 0; font-weight: 600; }
+  #status.bad { color: var(--bad); }
+  #status.ok { color: var(--ok); }
+  ul#errors { margin: 4px 0 12px; padding-left: 20px; color: var(--bad); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .table-wrap { overflow-x: auto; }
+  .hint { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>csv2ics</h1>
+  <p class="lead">Paste a CSV of events or a class timetable and download an .ics file for Google Calendar, Outlook or Apple Calendar. Nothing leaves this page.</p>
+
+  <label for="csv">CSV</label>
+  <textarea id="csv" spellcheck="false" placeholder="Title,Start Date,Start Time,End Time,Location&#10;Dentist,2027-01-12,09:00,09:30,Main Road clinic"></textarea>
+  <div class="actions">
+    <label class="secondary" style="margin:0"><input type="file" id="file" accept=".csv,.txt,text/csv" style="width:auto"></label>
+    <button class="secondary" id="sample" type="button">Load sample timetable</button>
+  </div>
+
+  <div class="row">
+    <div><label for="tz">Time zone</label><input id="tz" list="zones" autocomplete="off"></div>
+    <div><label for="order">Dates like 03/04/2027</label>
+      <select id="order"><option value="">Guess (fail if unclear)</option><option value="dmy">Day/Month/Year</option><option value="mdy">Month/Day/Year</option></select></div>
+    <div><label for="duration">Default length (min)</label><input id="duration" type="number" min="1" max="10080" value="60"></div>
+    <div><label class="check"><input type="checkbox" id="skip"> Skip bad rows</label></div>
+  </div>
+  <datalist id="zones"></datalist>
+  <p class="hint">Leave the time zone empty for floating times, which every calendar app shows as local time.</p>
+
+  <div id="status" role="status"></div>
+  <ul id="errors"></ul>
+
+  <div class="actions">
+    <button id="download" type="button" disabled>Download .ics</button>
+  </div>
+
+  <div class="table-wrap"><table id="preview" hidden>
+    <thead><tr><th>Line</th><th>Title</th><th>When</th><th>Repeats</th><th>Location</th></tr></thead>
+    <tbody></tbody>
+  </table></div>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -23,3 +23,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 017 | [seqgap](seqgap) | Finds missing, duplicate and out-of-order numbers in invoice or cheque series | Go |
 | 018 | [headlinecheck](headlinecheck) | Rule-based clickbait headline scorer: browser extension that dims flagged headlines, plus a CLI | JavaScript |
 | 019 | [branchsweep](branchsweep) | Finds local git branches that are merged, squash-merged, orphaned or stale and deletes them only on request | Python |
+| 020 | [csv2ics](csv2ics) | Converts a CSV event list or class timetable, with weekly repeats and time zones, into an .ics file for any calendar app | JavaScript |

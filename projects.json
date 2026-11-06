@@ -207,5 +207,16 @@
     "date": "2026-11-06",
     "score": 7.0,
     "learned": "Patch-id based merge detection with git cherry, for-each-ref formats, building throwaway git repos for tests"
+  },
+  {
+    "name": "csv2ics",
+    "problem": "Getting a spreadsheet timetable or event list into a calendar means Google's strict CSV import (Google only, US dates, no repeats), Outlook's separate wizard, or a one-off script.",
+    "solution": "Dependency-free Node CLI and in-browser page that map loose CSV headers to RFC 5545 events, with time zones, all-day and multi-day events, weekly/monthly repeats and per-row error reports.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/csv2ics",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-11-06",
+    "score": 7.5,
+    "learned": "RFC 5545 escaping, line folding by octets and RRULE UNTIL rules, wall-time to UTC conversion with Intl.DateTimeFormat across DST gaps and overlaps, sharing one ES module between CLI and browser"
   }
 ]
