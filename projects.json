@@ -218,5 +218,16 @@
     "date": "2026-11-06",
     "score": 7.5,
     "learned": "RFC 5545 escaping, line folding by octets and RRULE UNTIL rules, wall-time to UTC conversion with Intl.DateTimeFormat across DST gaps and overlaps, sharing one ES module between CLI and browser"
+  },
+  {
+    "name": "cronlint",
+    "problem": "Cron jobs that work in a terminal fail silently under cron because of its minimal PATH, unescaped % characters, relative paths, sh-only syntax and unread mail output.",
+    "solution": "Go CLI that lints crontab files for schedule errors and these environment pitfalls, with optional on-disk command lookup against cron's PATH.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/cronlint",
+    "language": "Go",
+    "status": "completed",
+    "date": "2026-11-13",
+    "score": 7.0,
+    "learned": "Cron semantics (day-of-month OR day-of-week, percent handling, default PATH and shell), range/step field parsing, testing filesystem lookups with temp dirs and t.Setenv"
   }
 ]
