@@ -229,5 +229,16 @@
     "date": "2026-11-13",
     "score": 7.0,
     "learned": "Cron semantics (day-of-month OR day-of-week, percent handling, default PATH and shell), range/step field parsing, testing filesystem lookups with temp dirs and t.Setenv"
+  },
+  {
+    "name": "invoiceage",
+    "problem": "Freelancers tracking invoices in a spreadsheet have no quick way to see who is overdue and by how long, and reminder emails keep getting put off.",
+    "solution": "CLI that reads an invoice CSV, prints an aging report with per-client overdue totals and drafts reminders whose tone depends on how late each invoice is.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/invoiceage",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-14",
+    "score": 7.0,
+    "learned": "Decimal money handling, tolerant CSV header mapping, exit codes that distinguish overdue from bad input"
   }
 ]

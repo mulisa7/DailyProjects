@@ -1,0 +1,6 @@
+Invoice,Client,Amount,Due Date,Paid
+INV-001,Acme Ltd,"1,200.00",2026-08-01,2026-08-10
+INV-002,Acme Ltd,450.50,2026-10-01,
+INV-003,Birch Studio,980.00,2026-11-20,
+INV-004,Cedar & Co,3000,2026-07-15,
+INV-005,Birch Studio,75.25,2026-11-05,
