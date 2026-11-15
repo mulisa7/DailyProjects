@@ -26,3 +26,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 020 | [csv2ics](csv2ics) | Converts a CSV event list or class timetable, with weekly repeats and time zones, into an .ics file for any calendar app | JavaScript |
 | 021 | [cronlint](cronlint) | Lints crontab files for schedule errors and the PATH, percent-sign and output pitfalls that make jobs fail silently | Go |
 | 022 | [invoiceage](invoiceage) | Aging report and reminder drafts for unpaid invoices from a plain CSV | Python |
+| 023 | [contrastfix](contrastfix) | Checks WCAG contrast for many colour pairs and suggests the nearest passing foreground colour | Rust |

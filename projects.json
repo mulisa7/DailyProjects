@@ -240,5 +240,16 @@
     "date": "2026-11-14",
     "score": 7.0,
     "learned": "Decimal money handling, tolerant CSV header mapping, exit codes that distinguish overdue from bad input"
+  },
+  {
+    "name": "contrastfix",
+    "problem": "Checking a palette's colour pairs against WCAG one at a time is slow, and failing pairs get fixed by trial and error.",
+    "solution": "Rust CLI that checks many pairs at once and suggests the nearest foreground colour, same hue, that passes AA or AAA.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/contrastfix",
+    "language": "Rust",
+    "status": "completed",
+    "date": "2026-11-15",
+    "score": 6.9,
+    "learned": "WCAG luminance maths, HSL round-trips and rounding, testing a Rust binary with CARGO_BIN_EXE"
   }
 ]

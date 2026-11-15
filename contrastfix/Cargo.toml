@@ -1,0 +1,15 @@
+[package]
+name = "contrastfix"
+version = "0.1.0"
+edition = "2021"
+description = "Check WCAG contrast for colour pairs and suggest the smallest change that passes"
+
+[lib]
+name = "contrastfix"
+path = "src/lib.rs"
+
+[[bin]]
+name = "contrastfix"
+path = "src/main.rs"
+
+[dependencies]
