@@ -251,5 +251,16 @@
     "date": "2026-11-15",
     "score": 6.9,
     "learned": "WCAG luminance maths, HSL round-trips and rounding, testing a Rust binary with CARGO_BIN_EXE"
+  },
+  {
+    "name": "settleup",
+    "problem": "Shared expenses between housemates or trip groups end up in spreadsheets or apps that need accounts; people want a local, scriptable way to see who owes whom.",
+    "solution": "Node CLI that reads a plain text expense list (equal, weighted or exact splits), computes balances in integer cents and prints the fewest payments that settle everyone.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/settleup",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-11-16",
+    "score": 6.8,
+    "learned": "Largest remainder rounding, bitmask DP to partition balances into zero-sum groups, keeping money as integer cents"
   }
 ]

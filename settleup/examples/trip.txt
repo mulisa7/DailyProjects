@@ -1,0 +1,6 @@
+# Weekend trip, invented data
+Alice paid 120.00 cabin: Alice Bob Carol Dana
+Bob paid 45.50 groceries: Alice Bob Carol Dana
+Carol paid 60 fuel: Alice*2 Bob Carol    # Alice's car, two shares
+Dana paid 30 boat hire: Alice=10 Dana=20
+Bob sent Alice 15

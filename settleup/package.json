@@ -1,0 +1,10 @@
+{
+  "name": "settleup",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Work out who owes whom from a plain text list of shared expenses, with the fewest payments",
+  "bin": { "settleup": "src/cli.js" },
+  "scripts": { "test": "node --test \"test/*.test.js\"" },
+  "license": "MIT"
+}
