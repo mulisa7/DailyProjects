@@ -262,5 +262,16 @@
     "date": "2026-11-16",
     "score": 6.8,
     "learned": "Largest remainder rounding, bitmask DP to partition balances into zero-sum groups, keeping money as integer cents"
+  },
+  {
+    "name": "spflint",
+    "problem": "SPF and DMARC records fail silently when they have a typo, a second SPF record or more than 10 DNS lookups, and online checkers only work after the record is published.",
+    "solution": "Offline Python CLI that lints SPF and DMARC records, counts DNS lookups (optionally expanding includes from a local JSON file) and reports errors and warnings with exit codes.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/spflint",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-19",
+    "score": 7.3,
+    "learned": "SPF term grammar and the 10-lookup limit, recursive include expansion with loop detection, designing a lint CLI with separate error and warning severities"
   }
 ]
