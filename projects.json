@@ -273,5 +273,16 @@
     "date": "2026-11-19",
     "score": 7.3,
     "learned": "SPF term grammar and the 10-lookup limit, recursive include expansion with loop detection, designing a lint CLI with separate error and warning severities"
+  },
+  {
+    "name": "linesets",
+    "problem": "Comparing lists of lines across files is clumsy: comm needs sorted input and exactly two files, uniq -d miscounts repeats within a file, and case or whitespace differences hide matches.",
+    "solution": "Go CLI that treats each file as a set of lines and prints union, common, only, diff or at-least-k results, with case/whitespace normalisation and per-line file counts.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/linesets",
+    "language": "Go",
+    "status": "completed",
+    "date": "2026-11-19",
+    "score": 6.8,
+    "learned": "Go flag package stops at the first positional argument so interleaved flags need a parse loop; set semantics with duplicates inside a file; testing a CLI through a run() function with injected streams"
   }
 ]

@@ -29,3 +29,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 023 | [contrastfix](contrastfix) | Checks WCAG contrast for many colour pairs and suggests the nearest passing foreground colour | Rust |
 | 024 | [settleup](settleup) | Works out who owes whom from a text list of shared expenses, with the fewest payments | JavaScript |
 | 025 | [spflint](spflint) | Lints SPF and DMARC DNS records offline: syntax, the 10-lookup limit, risky policies | Python |
+| 026 | [linesets](linesets) | Set operations (common, only, diff, at-least-k) on lines across many files, no sorting needed | Go |
