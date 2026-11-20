@@ -284,5 +284,16 @@
     "date": "2026-11-19",
     "score": 6.8,
     "learned": "Go flag package stops at the first positional argument so interleaved flags need a parse loop; set semantics with duplicates inside a file; testing a CLI through a run() function with injected streams"
+  },
+  {
+    "name": "todoage",
+    "problem": "TODO and FIXME comments pile up in a codebase and grep cannot say which ones are years old and need a decision.",
+    "solution": "Rust CLI that finds tagged comments, uses git blame to age each line, and lists them oldest first with filters, JSON output and a CI-friendly exit code.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/todoage",
+    "language": "Rust",
+    "status": "completed",
+    "date": "2026-11-20",
+    "score": 6.5,
+    "learned": "Parsing git blame --porcelain (headers only repeat per commit); building backdated test repos with GIT_AUTHOR_DATE; avoiding byte-index panics on Unicode lines"
   }
 ]

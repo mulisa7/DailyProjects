@@ -1,0 +1,7 @@
+[package]
+name = "todoage"
+version = "0.1.0"
+edition = "2021"
+description = "List TODO/FIXME comments in a git repository with how old each one is, using git blame"
+
+[dependencies]
