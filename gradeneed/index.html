@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gradeneed</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:46rem;margin:1.5rem auto;padding:0 1rem;line-height:1.4}
+textarea{width:100%;height:12rem;font-family:monospace;font-size:1rem;box-sizing:border-box}
+pre{background:#f3f3f3;padding:.75rem;overflow:auto}pre.err{background:#fde8e8;color:#8a1111}
+@media (prefers-color-scheme:dark){body{background:#181818;color:#eee}pre{background:#262626}pre.err{background:#4a1a1a;color:#ffb3b3}}
+</style></head><body>
+<h1>gradeneed</h1>
+<p>One line per category: <code>Name 20% drop=1: 8/10, 9/10</code>. Leave the score list empty for work not yet graded. Optional <code>target: 90 80</code> line.</p>
+<textarea id="spec" aria-label="Course spec">Homework 20% drop=1: 8/10, 9/10, 4/10, 10/10
+Quizzes 15%: 7/10, 8/10, 9/10
+Midterm 25%: 72/100
+Final 40%:
+target: 90 80 70</textarea>
+<pre id="out" aria-live="polite"></pre>
+<script src="grade.js"></script>
+<script>
+const spec=document.getElementById('spec'),out=document.getElementById('out');
+function run(){try{out.className='';out.textContent=GradeNeed.format(GradeNeed.analyze(GradeNeed.parseSpec(spec.value)))}
+catch(e){out.className='err';out.textContent='Error: '+e.message}}
+spec.addEventListener('input',run);run();
+</script></body></html>

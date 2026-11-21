@@ -1,0 +1,6 @@
+# Invented sample course
+Homework 20% drop=1: 8/10, 9/10, 4/10, 10/10
+Quizzes 15%: 7/10, 8/10, 9/10
+Midterm 25%: 72/100
+Final 40%:
+target: 90 80 70

@@ -295,5 +295,16 @@
     "date": "2026-11-20",
     "score": 6.5,
     "learned": "Parsing git blame --porcelain (headers only repeat per commit); building backdated test repos with GIT_AUTHOR_DATE; avoiding byte-index panics on Unicode lines"
+  },
+  {
+    "name": "gradeneed",
+    "problem": "Students with weighted grading and drop-lowest rules have to redo the arithmetic by hand to learn what they need on the final, and online calculators are limited or ad-heavy.",
+    "solution": "Dependency-free JavaScript module with a CLI and a static offline page that reads a small text spec and reports the average needed on pending work for each target grade.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/gradeneed",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-11-21",
+    "score": 6.5,
+    "learned": "Designing a tiny line-based spec format with line-numbered errors; one module shared between Node and the browser; handling secured and out-of-reach cases explicitly"
   }
 ]
