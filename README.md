@@ -32,3 +32,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 026 | [linesets](linesets) | Set operations (common, only, diff, at-least-k) on lines across many files, no sorting needed | Go |
 | 027 | [todoage](todoage) | Lists TODO/FIXME comments oldest first using git blame, with age filters and a CI exit code | Rust |
 | 028 | [gradeneed](gradeneed) | Works out the score needed on pending coursework to reach a target grade, with weights and drop-lowest rules | JavaScript |
+| 029 | [mdrefs](mdrefs) | Checks relative links and heading anchors in Markdown files, offline | Python |

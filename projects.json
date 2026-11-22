@@ -306,5 +306,16 @@
     "date": "2026-11-21",
     "score": 6.5,
     "learned": "Designing a tiny line-based spec format with line-numbered errors; one module shared between Node and the browser; handling secured and out-of-reach cases explicitly"
+  },
+  {
+    "name": "mdrefs",
+    "problem": "Renamed files and reworded headings leave dead relative links and #anchors in Markdown docs that most link checkers do not catch.",
+    "solution": "Offline Python CLI that verifies local link targets and GitHub-style heading anchors, including reference-style links and code-fence skipping.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/mdrefs",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-22",
+    "score": 7.0,
+    "learned": "GitHub heading slug rules, duplicate-heading suffixes, tokenising Markdown links without a parser, skipping code fences"
   }
 ]
