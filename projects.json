@@ -317,5 +317,16 @@
     "date": "2026-11-22",
     "score": 7.0,
     "learned": "GitHub heading slug rules, duplicate-heading suffixes, tokenising Markdown links without a parser, skipping code fences"
+  },
+  {
+    "name": "datename",
+    "problem": "Photos, screenshots and downloads have inconsistent names that do not sort by date, and EXIF-only renamers skip files with no EXIF data.",
+    "solution": "Go CLI that renames files by date taken from EXIF, then a date in the file name, then modified time, with dry run by default and collision handling.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/datename",
+    "language": "Go",
+    "status": "completed",
+    "date": "2026-11-23",
+    "score": 7.0,
+    "learned": "Hand-parsing JPEG segments and TIFF IFDs with bounds checks, regex limits without lookaround in Go, safe batch renames with collision suffixes"
   }
 ]
