@@ -328,5 +328,16 @@
     "date": "2026-11-23",
     "score": 7.0,
     "learned": "Hand-parsing JPEG segments and TIFF IFDs with bounds checks, regex limits without lookaround in Go, safe batch renames with collision suffixes"
+  },
+  {
+    "name": "robotscheck",
+    "problem": "Checking whether a URL is blocked by robots.txt means pasting into an online tester or using parsers that apply the first matching rule instead of the most specific one.",
+    "solution": "Offline Rust CLI that applies RFC 9309 matching (longest rule wins, Allow wins ties, * and $ wildcards, user-agent group selection) and can explain which rule decided each URL.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/robotscheck",
+    "language": "Rust",
+    "status": "completed",
+    "date": "2026-11-24",
+    "score": 7.0,
+    "learned": "Iterative wildcard matching with backtracking, RFC 9309 precedence rules, and how group merging and stacked user-agent lines change which rules apply"
   }
 ]

@@ -34,3 +34,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 028 | [gradeneed](gradeneed) | Works out the score needed on pending coursework to reach a target grade, with weights and drop-lowest rules | JavaScript |
 | 029 | [mdrefs](mdrefs) | Checks relative links and heading anchors in Markdown files, offline | Python |
 | 030 | [datename](datename) | Renames photos and downloads to a date-based name using EXIF, then the file name, then modified time | Go |
+| 031 | [robotscheck](robotscheck) | Checks URLs against a robots.txt file using RFC 9309 rules and shows which rule decided each one | Rust |
