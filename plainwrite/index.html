@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>plainwrite</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:50rem;margin:1.5rem auto;padding:0 1rem}
+textarea{width:100%;min-height:12rem;font:inherit;padding:.5rem;box-sizing:border-box}
+label{display:block;margin:.5rem 0}
+#summary{font-weight:600;margin:1rem 0}
+li{margin:.25rem 0}
+</style></head><body>
+<h1>plainwrite</h1>
+<p>Paste text. Nothing leaves your browser.</p>
+<textarea id="t" aria-label="Text to analyse"></textarea>
+<label><input type="checkbox" id="md"> Treat as Markdown</label>
+<div id="summary" aria-live="polite"></div>
+<ul id="issues"></ul>
+<script src="analyze.js"></script>
+<script>
+var t=document.getElementById('t'),md=document.getElementById('md'),s=document.getElementById('summary'),ul=document.getElementById('issues');
+function go(){
+  var r=analyze(t.value,{markdown:md.checked});
+  ul.textContent='';
+  if(r.empty){s.textContent='Paste some text to begin.';return;}
+  s.textContent=r.stats.words+' words, '+r.stats.sentences+' sentences. Reading ease '+r.readingEase+' ('+r.label+'), grade '+r.gradeLevel+'.';
+  r.issues.forEach(function(i){var li=document.createElement('li');li.textContent='Sentence '+i.sentence+': '+i.type+' ('+i.detail+')';ul.appendChild(li);});
+}
+t.addEventListener('input',go);md.addEventListener('change',go);go();
+</script></body></html>

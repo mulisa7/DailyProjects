@@ -35,3 +35,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 029 | [mdrefs](mdrefs) | Checks relative links and heading anchors in Markdown files, offline | Python |
 | 030 | [datename](datename) | Renames photos and downloads to a date-based name using EXIF, then the file name, then modified time | Go |
 | 031 | [robotscheck](robotscheck) | Checks URLs against a robots.txt file using RFC 9309 rules and shows which rule decided each one | Rust |
+| 032 | [plainwrite](plainwrite) | Offline readability checker: reading ease, grade level, long, passive and filler-word flags | JavaScript |

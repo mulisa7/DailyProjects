@@ -339,5 +339,16 @@
     "date": "2026-11-24",
     "score": 7.0,
     "learned": "Iterative wildcard matching with backtracking, RFC 9309 precedence rules, and how group merging and stacked user-agent lines change which rules apply"
+  },
+  {
+    "name": "plainwrite",
+    "problem": "Readability checkers are usually online services with logins or uploads; people want a free local way to check whether writing is plain and which sentences cause trouble.",
+    "solution": "Dependency-free JavaScript module with a CLI and an offline HTML page that reports reading ease, grade level and flags long, passive, filler and repeated-word sentences.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/plainwrite",
+    "language": "JavaScript",
+    "status": "completed",
+    "date": "2026-11-25",
+    "score": 6.9,
+    "learned": "Syllable counting by regex is only approximate; sharing one module between Node and the browser needs a guarded module.exports; testing a CLI through an injected run(args, stdin, out, err, readFile)"
   }
 ]
