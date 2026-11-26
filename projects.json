@@ -350,5 +350,16 @@
     "date": "2026-11-25",
     "score": 6.9,
     "learned": "Syllable counting by regex is only approximate; sharing one module between Node and the browser needs a guarded module.exports; testing a CLI through an injected run(args, stdin, out, err, readFile)"
+  },
+  {
+    "name": "loanplan",
+    "problem": "Online overpayment calculators hide the schedule or break on lump sums, and refinance break-even is usually a rough costs-over-saving guess.",
+    "solution": "Python CLI that amortizes a loan in exact decimal arithmetic, shows interest and time saved by extra payments and lump sums, and finds the refinance break-even month.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/loanplan",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-26",
+    "score": 7.1,
+    "learned": "Decimal rounding per month with a final-payment adjustment, and defining refinance break-even as cash paid plus balance owed rather than costs divided by monthly saving"
   }
 ]
