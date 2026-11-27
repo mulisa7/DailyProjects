@@ -361,5 +361,16 @@
     "date": "2026-11-26",
     "score": 7.1,
     "learned": "Decimal rounding per month with a final-payment adjustment, and defining refinance break-even as cash paid plus balance owed rather than costs divided by monthly saving"
+  },
+  {
+    "name": "harscrub",
+    "problem": "Support teams ask for HAR files, which contain cookies, bearer tokens, session ids in URLs and passwords in login bodies; hand-sanitising is slow and online sanitisers require uploading the file.",
+    "solution": "Go CLI that redacts sensitive headers, cookies, query and form values, JSON body keys, JWTs and Bearer credentials from a HAR file offline and reports what it removed, with a check mode for scripts.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/harscrub",
+    "language": "Go",
+    "status": "completed",
+    "date": "2026-11-27",
+    "score": 7.3,
+    "learned": "Decoding JSON with UseNumber to keep large numbers intact, disabling HTML escaping when re-encoding, and walking untyped JSON defensively so malformed entries never panic"
   }
 ]

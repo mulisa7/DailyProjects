@@ -37,3 +37,4 @@ One small project at a time, each one aimed at a real annoyance. Every project l
 | 031 | [robotscheck](robotscheck) | Checks URLs against a robots.txt file using RFC 9309 rules and shows which rule decided each one | Rust |
 | 032 | [plainwrite](plainwrite) | Offline readability checker: reading ease, grade level, long, passive and filler-word flags | JavaScript |
 | 033 | [loanplan](loanplan) | Loan schedule with extra payments and lump sums, plus refinance break-even month | Python |
+| 034 | [harscrub](harscrub) | Redacts cookies, tokens and passwords from HAR files before you share them, offline | Go |
