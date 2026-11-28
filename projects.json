@@ -372,5 +372,16 @@
     "date": "2026-11-27",
     "score": 7.3,
     "learned": "Decoding JSON with UseNumber to keep large numbers intact, disabling HTML escaping when re-encoding, and walking untyped JSON defensively so malformed entries never panic"
+  },
+  {
+    "name": "a11yscan",
+    "problem": "Common accessibility mistakes in static HTML (no alt text, unlabelled fields, skipped headings, missing lang) are only found by browser audit tools that need a running page and do not fit easily into scripts or pre-commit hooks.",
+    "solution": "Python CLI that parses static HTML offline with the standard library, reports 16 rule violations with file and line, supports JSON output and rule ignores, and exits non-zero for CI.",
+    "repository": "https://github.com/mulisa7/DailyProjects/tree/main/a11yscan",
+    "language": "Python",
+    "status": "completed",
+    "date": "2026-11-28",
+    "score": 7.1,
+    "learned": "Tracking accessible names across nested inline elements with an open-element stack, and keeping html.parser tolerant of malformed markup"
   }
 ]
